@@ -29,7 +29,8 @@ import os
 
 # The quarry: registrar and money-trail terms.
 DEFAULT_TERMS = ["godaddy", "google domains", "axoneme", "receipt",
-                 "order confirmation", "domain registration", "cash app"]
+                 "order confirmation", "domain registration", "cash app",
+                 "root@axoneme.org", "axoneme@usa.com"]
 
 # The windows: the .org years and the .dev years (IMAP SINCE/BEFORE).
 DATE_WINDOWS = [("2012-01-01", "2014-01-01"), ("2020-01-01", "2022-01-01")]

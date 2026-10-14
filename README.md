@@ -27,16 +27,31 @@ python -m vestigator.cli hunt --case case.db --host imap.mail.com
 # prompts for YOUR mailbox login; password never stored, never logged
 ```
 
+## The duo
+
+VESTIGATOR houses a detective duo, in Latin:
+
+- **INDAGATOR** (*the investigator* — Holmes): the hunt engine —
+  `indagator.py` holds both the IMAP hunt and the (dormant) Gmail hunt.
+  The one who follows footprints.
+- **SCRIBA** (*the scribe, the chronicler* — Watson): the case file —
+  `scriba.py`, the SQLite mosaic. The one who writes it all down,
+  faithful as ever.
+
+The logo: a magnifying glass framing a footprint (*vestigium*), the quill
+crossed behind it — gold on purple. `assets/vestigator-duo-logo.png`.
+
 ## Layout
 
-- `vestigator/mailhunt.py` — IMAP hunt over your own mailbox (every folder,
-  terms × date windows, headers filed verbatim)
-- `vestigator/gmailhunt.py` — Gmail API mirror; dormant until your OAuth
-  consent exists (readonly scope — the hunt reads, never writes)
-- `vestigator/evidence.py` — SQLite case file: sources, hits, dated events
-  with mandatory confidence (`attested` / `reported` / `inferred`)
+- `vestigator/indagator.py` — INDAGATOR: IMAP + Gmail hunts over your own
+  mailboxes (every folder, terms × date windows, headers filed verbatim)
+- `vestigator/scriba.py` — SCRIBA: SQLite case file (sources, hits, dated
+  events with mandatory confidence)
 - `vestigator/timeline.py` — the domain timeline, seeded from RDAP findings
-- `docs/ARCHITECTURE.md` — where the data lives and how access works
+- `vestigator/cli.py` — `dry-run` / `hunt` / `timeline`
+- `docs/` — `ARCHITECTURE.md` (where the data lives and how access works)
+- `assets/` — the duo logo (purple and gold)
+- `tests/` — the case file, tested
 
 ## Credentials
 

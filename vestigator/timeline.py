@@ -19,7 +19,7 @@
 
 """Seed and print the domain timeline."""
 
-from .evidence import CaseFile
+from .scriba import CaseFile
 
 
 def seed_axoneme_case(case):

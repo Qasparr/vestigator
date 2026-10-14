@@ -15,7 +15,8 @@ Public (no auth):  Wayback · crt.sh · RDAP · Common Crawl
                         \ 
 Your (your login):  mail.com IMAP · Gmail API (readonly) · exports
                         \
-                         → VESTIGATOR → local SQLite case file
+                         → VESTIGATOR → INDAGATOR hunts, SCRIBA files
+                                          → local SQLite case file
                                           → timeline + evidence
 ```
 

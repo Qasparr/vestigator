@@ -1,4 +1,5 @@
-# VESTIGATOR · evidence.py — the case database. Yours, local, small.
+# VESTIGATOR · scriba.py — SCRIBA, the chronicler (Watson).
+# The one who writes it all down, faithful as ever: the case database.
 #
 # "No hidden agenda: public records and your own records, nothing else."
 #

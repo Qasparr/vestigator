@@ -18,9 +18,8 @@
 import argparse
 import sys
 
-from .evidence import CaseFile
-from .mailhunt import hunt_imap
-from .gmailhunt import hunt_gmail
+from .scriba import CaseFile
+from .indagator import hunt_imap, hunt_gmail
 from .timeline import seed_axoneme_case, show
 
 
